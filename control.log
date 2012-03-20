@@ -1,0 +1,154 @@
+20120319231526:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231526:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231549:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Permanently added 'ec2-184-73-101-252.compute-1.amazonaws.com,184.73.101.252' (RSA) to the list of known hosts.
+20120319231549:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319231549:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319231557:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Host key verification failed.
+20120319231557:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319231604:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231604:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231605:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319231605:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319231608:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Permanently added 'ec2-72-44-36-170.compute-1.amazonaws.com,72.44.36.170' (RSA) to the list of known hosts.
+20120319231608:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319231608:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319231610:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231610:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319231611:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319231611:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319231611:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319231611:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319232325:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232325:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232326:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232326:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319232326:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232326:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319232553:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232553:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232553:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  ~/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232553:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  ~/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232558:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232558:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319232559:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232559:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319232655:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232655:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232655:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/daveckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232655:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/daveckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232656:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232656:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232656:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319232656:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319232738:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232738:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232738:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232738:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232739:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232739:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319232739:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232739:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319232818:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232818:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232818:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232818:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232844:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232844:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319232844:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232844:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319232844:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232844:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319232844:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319232844:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233010:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233010:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233010:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233010:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233010:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233010:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233011:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233011:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233315:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233315:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233315:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233315:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233315:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233315:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233315:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233315:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233511:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233511:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233511:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233511:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233511:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233511:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233511:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233511:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233604:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233604:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233604:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ssh/ec21.pem not accessible: No such file or directory.
+20120319233604:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ssh/ec21.pem not accessible: No such file or directory.
+20120319233605:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233605:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233605:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233605:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233821:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233821:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233821:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233821:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233821:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233821:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233821:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233821:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319233957:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233957:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319233957:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233957:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319233958:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233958:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319233958:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319233958:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319234046:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234046:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234046:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234046:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234046:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234046:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319234046:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234046:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319234257:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234257:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234257:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234257:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234258:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234258:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319234305:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234305:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319234706:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234706:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234706:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234706:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file  /Users/davemckenna/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234706:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234706:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319234706:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234706:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120319234755:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234755:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234756:ec2-72-44-36-170.compute-1.amazonaws.com:stdout: Tue Mar 20 03:47:56 UTC 2012
+20120319234756:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 0
+20120319234756:ec2-184-73-101-252.compute-1.amazonaws.com:stdout: Tue Mar 20 03:47:56 UTC 2012
+20120319234756:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 0
+20120319234935:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234935:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120319234935:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Warning: Identity file ~/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234935:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Warning: Identity file ~/.ec2/ec21.pem not accessible: No such file or directory.
+20120319234936:ec2-72-44-36-170.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234936:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 255
+20120319234937:ec2-184-73-101-252.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120319234937:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 255
+20120320001222:ec2-72-44-36-170.compute-1.amazonaws.com:ubuntu:ssh: date
+20120320001222:ec2-184-73-101-252.compute-1.amazonaws.com:ubuntu:ssh: date
+20120320001223:ec2-72-44-36-170.compute-1.amazonaws.com:stdout: Tue Mar 20 04:12:23 UTC 2012
+20120320001223:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 0
+20120320001223:ec2-184-73-101-252.compute-1.amazonaws.com:stdout: Tue Mar 20 04:12:23 UTC 2012
+20120320001223:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 0
