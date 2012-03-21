@@ -67,7 +67,7 @@ suite('Fleet', function(){
 
   });
 */
-/*
+
   suite('getFleetStatus()', function(){
 
     test('should return someting!!! err?', function(done){
@@ -87,7 +87,9 @@ suite('Fleet', function(){
     });
 
   });
-*/
+
+
+/*
   suite('playgound', function(){
 
     test('do stuff', function(done){
@@ -98,4 +100,5 @@ suite('Fleet', function(){
     });
 
   });
+*/
 });
