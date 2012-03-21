@@ -67,10 +67,11 @@ suite('Fleet', function(){
 
   });
 */
+/*
   suite('getFleetStatus()', function(){
 
-    test('foo', function(done){
-      
+    test('should return someting!!! err?', function(done){
+
       var fleet = new navy.Fleet(this.fleetOpts);
 
       fleet.instances = {'i-c11c51a5':{},'i-c31c51a7':{}};
@@ -81,9 +82,19 @@ suite('Fleet', function(){
         fleet.getFleetStatusCb = origCb;
         fleet.getFleetStatusCb(err, results);
         done();
-
       }
       fleet.getFleetStatus();
+    });
+
+  });
+*/
+  suite('playgound', function(){
+
+    test('do stuff', function(done){
+
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.deploy();
+
     });
 
   });
