@@ -138,7 +138,7 @@ suite('Fleet', function(){
       sinon.stub(fleet.ec2, 'call', function(){
         if (typeof arguments[2] === 'function'){
           //this is anon fn that wraps fleet.deployCb()
-          arguments[2].call(this);
+          arguments[2].call(fleet);
         }
       });
       fleet.deploy();
@@ -153,7 +153,7 @@ suite('Fleet', function(){
       sinon.stub(fleet.ec2, 'call', function(){
         if (typeof arguments[2] === 'function'){
           //this is anon fn that wraps fleet.deployCb()
-          arguments[2].call(this, null, runInstancesResult);
+          arguments[2].call(fleet, null, runInstancesResult);
         }
       });
       fleet.deploy();
@@ -167,7 +167,7 @@ suite('Fleet', function(){
       sinon.stub(fleet.ec2, 'call', function(){
         if (typeof arguments[2] === 'function'){
           //this is anon fn that wraps fleet.deployCb()
-          arguments[2].call(this, 'error string');
+          arguments[2].call(fleet, 'error string');
         }
       });
 
@@ -185,15 +185,25 @@ suite('Fleet', function(){
       sinon.stub(fleet.ec2, 'call', function(){
         if (typeof arguments[2] === 'function'){
           //this is anon fn that wraps fleet.deployCb()
-          arguments[2].call(this, null, runInstancesResult);
+          arguments[2].call(fleet, null, runInstancesResult);
         }
       });
       fleet.deploy();
-      console.log(fleet.instances);
       assert.equal(
         runInstancesResult.instancesSet.item.length,
         Object.keys(fleet.instances).length
       );
+
+      var inst1 = runInstancesResult.instancesSet.item[0]
+      var inst2 = runInstancesResult.instancesSet.item[1]
+      assert.ok(fleet.instances[inst1.instanceId]);
+      assert.ok(fleet.instances[inst2.instanceId]);
+
+      assert.equal(fleet.instances[inst1.instanceId].state, inst1.instanceState.name);
+      assert.equal(fleet.instances[inst1.instanceId].domain, inst1.dnsName);
+
+      assert.equal(fleet.instances[inst2.instanceId].state, inst2.instanceState.name);
+      assert.equal(fleet.instances[inst2.instanceId].domain, inst2.dnsName);
 
     });
   });
