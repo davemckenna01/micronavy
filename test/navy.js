@@ -23,6 +23,29 @@ suite('Fleet', function(){
       secGroup: 'someSecurityGroup'
     }
 
+    this.runInstancesResult = {
+      instancesSet: {
+        item: [
+          {
+            instanceId: 'i-abc123',
+            dnsName: '123-etc-ec2.aws.com',
+            instanceState: {
+              code: '0',
+              name: 'pending'
+            }
+          },
+          {
+            instanceId: 'i-abc456',
+            dnsName: '456-etc-ec2.aws.com',
+            instanceState: {
+              code: '0',
+              name: 'pending'
+            }
+          }
+        ]
+      }
+    }
+
     sinon.stub(navy.Fleet.prototype.aws, 'createEC2Client', function(){
       return {call:function(){}};
     });
@@ -30,7 +53,11 @@ suite('Fleet', function(){
   });
 
   teardown(function(){
-   navy.Fleet.prototype.aws.createEC2Client.restore();
+    //Sometimes we restore this puppy  in tests... so check that
+    //it's restorable first.
+    if(navy.Fleet.prototype.aws.createEC2Client.restore) {
+      navy.Fleet.prototype.aws.createEC2Client.restore();
+    }
   });
 
   suite('constructor', function(){
@@ -60,6 +87,13 @@ suite('Fleet', function(){
   });
 
   suite('connect()', function(){
+
+    test('should call fleet.aws.createEC2Client', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.connect();
+      assert.ok(fleet.aws.createEC2Client.calledOnce);
+
+    });
 
     test('should set up a fleet.ec2 object', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
@@ -96,46 +130,87 @@ suite('Fleet', function(){
 
   });
 
-  //suite('deployCb()', function(){
-  //  test('should be called after as a result of deploy()', function(){
+  suite('deployCb()', function(){
+    test('should be called as a result of deploy()', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.connect();
+      fleet.deployCb = sinon.spy();
+      sinon.stub(fleet.ec2, 'call', function(){
+        if (typeof arguments[2] === 'function'){
+          //this is anon fn that wraps fleet.deployCb()
+          arguments[2].call(this);
+        }
+      });
+      fleet.deploy();
+      assert.ok(fleet.deployCb.calledOnce);
+    });
+
+    test('should receive null for error, and an obj for results if api call success', function(){
+      var runInstancesResult = this.runInstancesResult;
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.connect();
+      fleet.deployCb = sinon.spy();
+      sinon.stub(fleet.ec2, 'call', function(){
+        if (typeof arguments[2] === 'function'){
+          //this is anon fn that wraps fleet.deployCb()
+          arguments[2].call(this, null, runInstancesResult);
+        }
+      });
+      fleet.deploy();
+      assert.ok(fleet.deployCb.calledWith(null, runInstancesResult));
+    });
+
+    test('should throw an error if it gets a string in the error arg (1st arg)', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.connect();
+      sinon.spy(fleet, 'deployCb');
+      sinon.stub(fleet.ec2, 'call', function(){
+        if (typeof arguments[2] === 'function'){
+          //this is anon fn that wraps fleet.deployCb()
+          arguments[2].call(this, 'error string');
+        }
+      });
+
+      try {
+        fleet.deploy();
+      } catch (e){}
+
+      assert.ok(fleet.deployCb.threw());
+    });
+
+    test('should add ec2 instance data to the fleet object', function(){
+      var runInstancesResult = this.runInstancesResult;
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.connect();
+      sinon.stub(fleet.ec2, 'call', function(){
+        if (typeof arguments[2] === 'function'){
+          //this is anon fn that wraps fleet.deployCb()
+          arguments[2].call(this, null, runInstancesResult);
+        }
+      });
+      fleet.deploy();
+      console.log(fleet.instances);
+      assert.equal(
+        runInstancesResult.instancesSet.item.length,
+        Object.keys(fleet.instances).length
+      );
+
+    });
+  });
+
+  //suite('playground', function(){
+
+  //  test('do stuff', function(done){
+
+  //    navy.Fleet.prototype.aws.createEC2Client.restore();
   //    var fleet = new navy.Fleet(this.fleetOpts);
+  //    
   //    fleet.connect();
-  //    sinon.spy(fleet, 'deployCb');
+
   //    fleet.deploy();
+
   //  });
+
   //});
-
-//  suite('getFleetStatus()', function(){
-//
-//    test('should return someting!!! err?', function(done){
-//
-//      var fleet = new navy.Fleet(this.fleetOpts);
-//
-//      fleet.instances = {'i-c11c51a5':{},'i-c31c51a7':{}};
-//
-//      var origCb = fleet.getFleetStatusCb;
-//      fleet.getFleetStatusCb = function(err, results){
-//        //Overriding and wrapping for the sake of testing
-//        fleet.getFleetStatusCb = origCb;
-//        fleet.getFleetStatusCb(err, results);
-//        done();
-//      }
-//      fleet.getFleetStatus();
-//    });
-//
-//  });
-
-
-
-//  suite('playgound', function(){
-//
-//    test('do stuff', function(done){
-//
-//      var fleet = new navy.Fleet(this.fleetOpts);
-//      fleet.deploy();
-//
-//    });
-//
-//  });
 
 });
