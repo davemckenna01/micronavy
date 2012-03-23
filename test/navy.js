@@ -234,7 +234,41 @@ suite('Fleet', function(){
       assert.equal(2, fleet.getFleetStatusTries);
     });
 
+    test('should call fleet.getFleetStatusCb()', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.ec2 = {call:function(){}};
+      sinon.stub(fleet.ec2, 'call', function(){
+        if (typeof arguments[2] === 'function'){
+          //this is anon fn that wraps fleet.getFleetStatusCb()
+          arguments[2].call();
+        }
+      });
+      fleet.getFleetStatusCb = sinon.spy();
+
+      //Putting the fleet object in a "post-deploy()" state
+      var inst1 = this.runInstancesResult.instancesSet.item[0]
+      var inst2 = this.runInstancesResult.instancesSet.item[1]
+      fleet.instances[inst1.instanceId] = {
+        status: inst1.instanceState.name,
+        domain: inst1.dnsName
+      }
+      fleet.instances[inst2.instanceId] = {
+        status: inst2.instanceState.name,
+        domain: inst2.dnsName
+      }
+
+      fleet.getFleetStatus.call(fleet);
+
+      assert.ok(fleet.getFleetStatusCb.calledOnce);
+    });
   });
+
+  suite('getFleetStatusCb()', function(){
+    test('', function(){
+    });
+  });
+
+
 
   //suite('playground', function(){
 
