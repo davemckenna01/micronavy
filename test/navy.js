@@ -120,9 +120,6 @@ suite('Fleet', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
 
       assert.deepEqual(fleet.opts, this.fleetOpts);
-      assert.isFalse(fleet.deployed);
-      assert.isFalse(fleet.armed);
-      assert.isNull(fleet.ec2);
     });
   });
 
@@ -275,7 +272,6 @@ suite('Fleet', function(){
   suite('_getFleetStatusCb()', function(){
     test('should throw an error if error arg (1st) is not null', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet._armCannons = sinon.stub();
 
       assert.throws(function(){
         fleet._getFleetStatusCb('an error');
@@ -287,7 +283,6 @@ suite('Fleet', function(){
 
     test('should update feet.instances with latest data', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet._armCannons = sinon.stub();
       fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
@@ -314,7 +309,6 @@ suite('Fleet', function(){
 
     test('should update fleet.allInstancesRunning', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet._armCannons = sinon.stub();
       fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
@@ -338,7 +332,6 @@ suite('Fleet', function(){
     
     test('should set fleet.deployed to true if all instances running', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet._armCannons = sinon.stub();
       fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
@@ -351,23 +344,6 @@ suite('Fleet', function(){
       fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
       assert.ok(fleet.deployed);
-    });
-
-    test('should call fleet._armCannons() if all instances running', function(){
-      var fleet = new navy.Fleet(this.fleetOpts);
-      fleet._armCannons = sinon.stub();
-      fleet._getFleetStatus = sinon.spy();
-      fleet.awsPollingInterval = 10;
-      fleet = this.postDeployify(fleet, this);
-
-      var insts = this.describeInstancesResult.reservationSet.item.instancesSet.item;
-      insts[0].instanceState.name = 'running';
-      insts[1].instanceState.name = 'running';
-      this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
-
-      fleet._getFleetStatusCb(null, this.describeInstancesResult);
-
-      assert.ok(fleet._armCannons.calledOnce);
     });
 
     test('should call _getFleetStatus() (via _getFleetStatusPollCb) if all instances are not running (polling mechanism)', function(done){
@@ -418,14 +394,18 @@ suite('Fleet', function(){
 
   });
 
-
-  suite('_getFleetStatusPollCb', function(){
+  suite('_getFleetStatusPollCb()', function(){
     test('should call _getFleetStatus()', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet._getFleetStatus = sinon.stub();
       fleet._getFleetStatusPollCb();
       
       assert.ok(fleet._getFleetStatus.calledOnce);
+    });
+  });
+
+  suite('arm()', function(){
+    test('should ', function(){
     });
   });
 
