@@ -353,7 +353,7 @@ suite('Fleet', function(){
       assert.ok(fleet.deployed);
     });
 
-    test('should call fleet.armCannons() if all instances running', function(){
+    test('should call fleet._armCannons() if all instances running', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet._armCannons = sinon.stub();
       fleet._getFleetStatus = sinon.spy();
@@ -370,9 +370,10 @@ suite('Fleet', function(){
       assert.ok(fleet._armCannons.calledOnce);
     });
 
-    test('should call getFleetStatus if all instances are not running (polling mechanism)', function(done){
+    test('should call _getFleetStatus() (via _getFleetStatusPollCb) if all instances are not running (polling mechanism)', function(done){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet._getFleetStatus = sinon.spy();
+      sinon.spy(fleet, '_getFleetStatusPollCb');
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -387,7 +388,9 @@ suite('Fleet', function(){
         fleet._getFleetStatusPollCb = original;
         fleet._getFleetStatusPollCb();
 
+        assert.ok(fleet._getFleetStatusPollCb.calledOnce);
         assert.ok(fleet._getFleetStatus.calledOnce);
+
         done();
       }
 
@@ -416,21 +419,34 @@ suite('Fleet', function(){
   });
 
 
+  suite('_getFleetStatusPollCb', function(){
+    test('should call _getFleetStatus()', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet._getFleetStatus = sinon.stub();
+      fleet._getFleetStatusPollCb();
+      
+      assert.ok(fleet._getFleetStatus.calledOnce);
+    });
+  });
 
-  //suite('playground', function(){
-
-  //  test('do stuff', function(done){
-
-  //    navy.Fleet.prototype.aws.createEC2Client.restore();
-  //    var fleet = new navy.Fleet(this.fleetOpts);
-  //    
-  //    fleet.connect();
-
-  //    fleet.deploy();
-
-  //  });
-
-  //});
+//  suite('playground', function(){
+//
+//    test('do stuff', function(done){
+//
+//      navy.Fleet.prototype.aws.createEC2Client.restore();
+//      var fleet = new navy.Fleet(this.LIVEfleetOpts);
+//      
+//      fleet.connect();
+//
+//      //try{
+//      fleet.deploy();
+//      //} catch (e) {
+//      //  console.log(e);
+//      //  done();
+//      //}
+//    });
+//
+//  });
 
 });
 
