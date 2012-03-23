@@ -162,7 +162,7 @@ suite('Fleet', function(){
       assert.isFunction(fleet.ec2.call.getCall(0).args[2]);
     });
 
-    test('should call fleet.deployCb()', function(){
+    test('should call fleet._deployCb()', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet.ec2 = {call:function(){}};
       sinon.stub(fleet.ec2, 'call', function(){
@@ -171,23 +171,23 @@ suite('Fleet', function(){
           arguments[2].call();
         }
       });
-      fleet.deployCb = sinon.spy();
+      fleet._deployCb = sinon.spy();
       fleet.deploy();
 
-      assert.ok(fleet.deployCb.calledOnce);
+      assert.ok(fleet._deployCb.calledOnce);
     });
   });
 
-  suite('deployCb()', function(){
+  suite('_deployCb()', function(){
 
     test('should throw an error if error arg (1st) is not null', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
 
       assert.throws(function(){
-        fleet.deployCb('an error');
+        fleet._deployCb('an error');
       });
       assert.throws(function(){
-        fleet.deployCb({});
+        fleet._deployCb({});
       });
     });
 
@@ -195,8 +195,8 @@ suite('Fleet', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       //stub getFleetStatus to make sure we don't execute 
       //further stuff.. since it's called at end of deployCb()
-      sinon.stub(fleet, 'getFleetStatus');
-      fleet.deployCb(null, this.runInstancesResult);
+      sinon.stub(fleet, '_getFleetStatus');
+      fleet._deployCb(null, this.runInstancesResult);
 
       var inst1 = this.runInstancesResult.instancesSet.item[0]
       var inst2 = this.runInstancesResult.instancesSet.item[1]
@@ -211,23 +211,23 @@ suite('Fleet', function(){
       assert.equal(fleet.instances[inst2.instanceId].domain, inst2.dnsName);
     });
 
-    test('should call fleet.getFleetStatus()', function(){
+    test('should call fleet._getFleetStatus()', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.getFleetStatus = sinon.spy();
-      fleet.deployCb(null, this.runInstancesResult);
+      fleet._getFleetStatus = sinon.spy();
+      fleet._deployCb(null, this.runInstancesResult);
 
-      assert.ok(fleet.getFleetStatus.calledOnce);
+      assert.ok(fleet._getFleetStatus.calledOnce);
     });
   });
 
-  suite('getFleetStatus()', function(){
+  suite('_getFleetStatus()', function(){
     test('should call ec2 api via fleet.ec2.call with arg 1: "DescribeInstances", arg 2: obj w/ props somewhat equal to fleet.instances, and arg 3: an anonymous fn', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet.ec2 = {call:sinon.spy()};
 
       fleet = this.postDeployify(fleet, this);
 
-      fleet.getFleetStatus.call(fleet)
+      fleet._getFleetStatus.call(fleet)
 
       //constructing a similar object to what will be passed to ec2.call
       var options = {};
@@ -247,48 +247,48 @@ suite('Fleet', function(){
 
       fleet = this.postDeployify(fleet, this);
 
-      fleet.getFleetStatus.call(fleet);
+      fleet._getFleetStatus.call(fleet);
       assert.equal(1, fleet.getFleetStatusTries);
-      fleet.getFleetStatus.call(fleet);
+      fleet._getFleetStatus.call(fleet);
       assert.equal(2, fleet.getFleetStatusTries);
     });
 
-    test('should call fleet.getFleetStatusCb()', function(){
+    test('should call fleet._getFleetStatusCb()', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet.ec2 = {call:function(){}};
       sinon.stub(fleet.ec2, 'call', function(){
         if (typeof arguments[2] === 'function'){
-          //this is anon fn that wraps fleet.getFleetStatusCb()
+          //this is anon fn that wraps fleet._getFleetStatusCb()
           arguments[2].call();
         }
       });
-      fleet.getFleetStatusCb = sinon.spy();
+      fleet._getFleetStatusCb = sinon.spy();
 
       fleet = this.postDeployify(fleet, this);
 
-      fleet.getFleetStatus.call(fleet);
+      fleet._getFleetStatus.call(fleet);
 
-      assert.ok(fleet.getFleetStatusCb.calledOnce);
+      assert.ok(fleet._getFleetStatusCb.calledOnce);
     });
   });
 
-  suite('getFleetStatusCb()', function(){
+  suite('_getFleetStatusCb()', function(){
     test('should throw an error if error arg (1st) is not null', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.armCannons = sinon.stub();
+      fleet._armCannons = sinon.stub();
 
       assert.throws(function(){
-        fleet.getFleetStatusCb('an error');
+        fleet._getFleetStatusCb('an error');
       });
       assert.throws(function(){
-        fleet.getFleetStatusCb({});
+        fleet._getFleetStatusCb({});
       });
     });
 
     test('should update feet.instances with latest data', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.armCannons = sinon.stub();
-      fleet.getFleetStatus = sinon.spy();
+      fleet._armCannons = sinon.stub();
+      fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -299,7 +299,7 @@ suite('Fleet', function(){
       insts[1].dnsName = {};
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
       assert.equal(
         insts.length,
@@ -314,8 +314,8 @@ suite('Fleet', function(){
 
     test('should update fleet.allInstancesRunning', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.armCannons = sinon.stub();
-      fleet.getFleetStatus = sinon.spy();
+      fleet._armCannons = sinon.stub();
+      fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -324,22 +324,22 @@ suite('Fleet', function(){
       insts[1].instanceState.name = 'someOtherStatus';
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
       assert.ok(!fleet.allInstancesRunning);
 
       insts[1].instanceState.name = 'running';
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
       assert.ok(fleet.allInstancesRunning);
     });
     
     test('should set fleet.deployed to true if all instances running', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.armCannons = sinon.stub();
-      fleet.getFleetStatus = sinon.spy();
+      fleet._armCannons = sinon.stub();
+      fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -348,15 +348,15 @@ suite('Fleet', function(){
       insts[1].instanceState.name = 'running';
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
       assert.ok(fleet.deployed);
     });
 
     test('should call fleet.armCannons() if all instances running', function(){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.armCannons = sinon.stub();
-      fleet.getFleetStatus = sinon.spy();
+      fleet._armCannons = sinon.stub();
+      fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -365,14 +365,14 @@ suite('Fleet', function(){
       insts[1].instanceState.name = 'running';
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
-      assert.ok(fleet.armCannons.calledOnce);
+      assert.ok(fleet._armCannons.calledOnce);
     });
 
     test('should call getFleetStatus if all instances are not running (polling mechanism)', function(done){
       var fleet = new navy.Fleet(this.fleetOpts);
-      fleet.getFleetStatus = sinon.spy();
+      fleet._getFleetStatus = sinon.spy();
       fleet.awsPollingInterval = 10;
       fleet = this.postDeployify(fleet, this);
 
@@ -382,16 +382,16 @@ suite('Fleet', function(){
       this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
 
       //need to wrap the cb in a fn to test it since it's async
-      var original = fleet.getFleetStatusPollCb;
-      fleet.getFleetStatusPollCb = function(){
-        fleet.getFleetStatusPollCb = original;
-        fleet.getFleetStatusPollCb();
+      var original = fleet._getFleetStatusPollCb;
+      fleet._getFleetStatusPollCb = function(){
+        fleet._getFleetStatusPollCb = original;
+        fleet._getFleetStatusPollCb();
 
-        assert.ok(fleet.getFleetStatus.calledOnce);
+        assert.ok(fleet._getFleetStatus.calledOnce);
         done();
       }
 
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+      fleet._getFleetStatusCb(null, this.describeInstancesResult);
 
     });
 
@@ -409,7 +409,7 @@ suite('Fleet', function(){
       var self = this;
 
       assert.throws(function(){
-        fleet.getFleetStatusCb(null, self.describeInstancesResult);
+        fleet._getFleetStatusCb(null, self.describeInstancesResult);
       });
     });
 
