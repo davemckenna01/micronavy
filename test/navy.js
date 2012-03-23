@@ -370,11 +370,35 @@ suite('Fleet', function(){
       assert.ok(fleet.armCannons.calledOnce);
     });
 
-    test('should call getFleetStatus multiple times until all instances are running if it sees that all instances are not running (polling mechanism)', function(done){
+    test('should call getFleetStatus if all instances are not running (polling mechanism)', function(done){
       var fleet = new navy.Fleet(this.fleetOpts);
       fleet.getFleetStatus = sinon.spy();
-      fleet.armCannons = sinon.spy();
-      fleet.awsPollingInterval = 1000;
+      fleet.awsPollingInterval = 10;
+      fleet = this.postDeployify(fleet, this);
+
+      var insts = this.describeInstancesResult.reservationSet.item.instancesSet.item;
+      insts[0].instanceState.name = 'running';
+      insts[1].instanceState.name = 'someOtherState';
+      this.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
+
+      //need to wrap the cb in a fn to test it since it's async
+      var original = fleet.getFleetStatusPollCb;
+      fleet.getFleetStatusPollCb = function(){
+        fleet.getFleetStatusPollCb = original;
+        fleet.getFleetStatusPollCb();
+
+        assert.ok(fleet.getFleetStatus.calledOnce);
+        done();
+      }
+
+      fleet.getFleetStatusCb(null, this.describeInstancesResult);
+
+    });
+
+    test('should throw an error if polling at the max # of tries', function(){
+      var fleet = new navy.Fleet(this.fleetOpts);
+      fleet.getFleetStatusTries = 2;
+      fleet.maxGetFleetStatusTries = 2;
       fleet = this.postDeployify(fleet, this);
 
       var insts = this.describeInstancesResult.reservationSet.item.instancesSet.item;
@@ -384,44 +408,11 @@ suite('Fleet', function(){
 
       var self = this;
 
-      //need to wrap the cb in a fn to test it since it's async cb
-      var original = fleet.getFleetStatusPollCb;
-      fleet.getFleetStatusPollCb = function(){
-        fleet.getFleetStatusPollCb = original;
-        fleet.getFleetStatusPollCb();
-
-        //need to wrap the cb in a fn to test it since it's async cb
-        var original2 = fleet.getFleetStatusPollCb;
-        fleet.getFleetStatusPollCb = function(){
-          fleet.getFleetStatusPollCb = original2;
-          fleet.getFleetStatusPollCb();
-
-          insts[1].instanceState.name = 'running';
-          self.describeInstancesResult.reservationSet.item.instancesSet.item = insts;
-
-          fleet.getFleetStatusCb(null, self.describeInstancesResult);
-
-          assert.ok(fleet.getFleetStatus.calledTwice);
-          assert.ok(fleet.armCannons.calledOnce);
-
-          done();
-        }
-
-        assert.ok(fleet.getFleetStatus.calledOnce);
+      assert.throws(function(){
         fleet.getFleetStatusCb(null, self.describeInstancesResult);
-
-      }
-
-      fleet.getFleetStatusCb(null, this.describeInstancesResult);
-
+      });
     });
 
-    //test('should throw an error if polling past the max # tries', function(){
-    //  var fleet = new navy.Fleet(this.fleetOpts);
-    //  fleet = this.postDeployify(fleet, this);
-    //  fleet.getFleetStatusCb(null, this.describeInstancesResult);
-
-    //});
   });
 
 
@@ -442,3 +433,4 @@ suite('Fleet', function(){
   //});
 
 });
+
