@@ -405,28 +405,28 @@ suite('Fleet', function(){
   });
 
   suite('arm()', function(){
-    test('should ', function(){
+    test('should start', function(){
     });
   });
 
-//  suite('playground', function(){
-//
-//    test('do stuff', function(done){
-//
-//      navy.Fleet.prototype.aws.createEC2Client.restore();
-//      var fleet = new navy.Fleet(this.LIVEfleetOpts);
-//      
-//      fleet.connect();
-//
-//      //try{
-//      fleet.deploy();
-//      //} catch (e) {
-//      //  console.log(e);
-//      //  done();
-//      //}
-//    });
-//
-//  });
+  suite('playground', function(){
+
+    test('do stuff', function(done){
+
+      navy.Fleet.prototype.aws.createEC2Client.restore();
+      var fleet = new navy.Fleet(this.LIVEfleetOpts);
+      
+      fleet.connect();
+
+      //try{
+      fleet.deploy();
+      //} catch (e) {
+      //  console.log(e);
+      //  done();
+      //}
+    });
+
+  });
 
 });
 

@@ -152,3 +152,413 @@
 20120320001223:ec2-72-44-36-170.compute-1.amazonaws.com:exit: 0
 20120320001223:ec2-184-73-101-252.compute-1.amazonaws.com:stdout: Tue Mar 20 04:12:23 UTC 2012
 20120320001223:ec2-184-73-101-252.compute-1.amazonaws.com:exit: 0
+20120323222928:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323222928:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323222931:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: Warning: Permanently added 'ec2-23-20-170-212.compute-1.amazonaws.com,23.20.170.212' (RSA) to the list of known hosts.
+20120323222931:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120323222931:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: lost connection
+20120323222931:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323223010:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323223010:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323223011:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323223016:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: Warning: Permanently added 'ec2-107-22-129-145.compute-1.amazonaws.com,107.22.129.145' (RSA) to the list of known hosts.
+20120323223017:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323223024:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323223024:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323223024:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323223024:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224312:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323224312:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323224312:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323224312:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323224313:ec2-107-22-129-145.compute-1.amazonaws.com:stdout: Sat Mar 24 02:43:12 UTC 2012
+20120323224313:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224313:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224314:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: Sat Mar 24 02:43:12 UTC 2012
+20120323224314:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224314:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224321:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323224321:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323224321:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323224321:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323224322:ec2-107-22-129-145.compute-1.amazonaws.com:stdout: Sat Mar 24 02:43:21 UTC 2012
+20120323224322:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: Sat Mar 24 02:43:21 UTC 2012
+20120323224322:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224322:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224322:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224322:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224553:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: chmod 000 npm-debug.log
+20120323224553:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: chmod 000 npm-debug.log
+20120323224553:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323224553:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323224554:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224554:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224554:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: scp: /home/ubuntu/npm-debug.log: Permission denied
+20120323224554:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: scp: /home/ubuntu/npm-debug.log: Permission denied
+20120323224554:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 1
+20120323224554:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323224645:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: mv npm-debug.log fartface
+20120323224645:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: mv npm-debug.log fartface
+20120323224645:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323224645:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323224646:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: scp: /home/ubuntu/npm-debug.log: Permission denied
+20120323224646:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 1
+20120323224646:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224647:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224647:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224712:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323224712:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323224712:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323224712:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323224713:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224713:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323224713:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323224713:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225243:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225243:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225243:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225243:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225244:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log'
+20120323225244:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323225244:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 1
+20120323225244:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log'
+20120323225244:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323225244:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323225244:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225244:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225301:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225301:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225301:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225301:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225302:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225302:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225302:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225302:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225316:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225316:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225316:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225316:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225317:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225317:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225317:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225317:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225318:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225318:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225318:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225318:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225319:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225319:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225319:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225319:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225320:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225320:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225320:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225320:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225321:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225321:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225321:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225321:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225403:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225403:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225404:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225621:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225621:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225622:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225622:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225622:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225622:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225623:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225623:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log': No such file or directory
+20120323225623:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323225640:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225640:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225640:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225640:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225640:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225640:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225641:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225641:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323225641:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323225641:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323225641:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323225723:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225723:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225725:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225725:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225725:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225725:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225726:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323225726:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log': No such file or directory
+20120323225726:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225726:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323225805:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225805:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225806:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225806:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225806:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225806:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225807:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log'
+20120323225807:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225807:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323225807:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323225816:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323225816:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323225817:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323225817:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225818:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225818:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323225819:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323225819:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323225819:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323225819:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323225819:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323230045:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230045:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230045:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230045:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230046:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230046:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230046:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230046:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230114:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230114:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230114:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230114:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230115:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230115:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323230115:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323230115:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323230115:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323230115:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230115:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230139:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230140:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230140:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230140:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230140:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230141:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230141:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230141:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230142:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230142:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230142:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230142:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230143:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230143:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230143:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230143:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230144:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230144:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230144:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230144:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230145:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230145:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230145:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230145:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230146:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230146:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230146:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230146:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230147:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230147:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230147:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230147:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230148:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230148:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230148:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230148:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230149:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230149:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230149:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230149:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230151:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230151:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230151:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230151:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230152:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230152:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230152:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230152:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230153:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230153:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230153:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230153:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230154:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230154:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230154:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230154:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230155:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230155:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230155:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230155:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230156:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230156:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230156:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230156:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230157:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230157:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230157:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230157:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230158:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230158:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230158:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230158:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230159:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230159:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230159:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230159:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230159:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230159:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230159:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230200:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230200:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230200:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230200:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230200:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230201:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230201:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230201:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230202:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230203:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230203:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323230203:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323230203:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323230204:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: mv: 
+20120323230204:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323230204:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323230204:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 1
+20120323230204:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323230204:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323230204:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323231328:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323231328:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323231328:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323231328:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323231329:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323231329:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323231329:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323231332:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323231634:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323231634:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323231635:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323231635:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323231636:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323231636:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323231636:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323231637:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log': No such file or directory
+20120323231637:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323232022:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323232022:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323232023:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232023:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232023:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323232023:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232027:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323232027:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log': No such file or directory
+20120323232027:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323232027:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323232132:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323232133:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232133:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232134:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232136:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323232136:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232136:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232137:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232445:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323232445:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323232446:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232446:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232446:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323232446:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323232446:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323232447:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: cannot stat `npm-debug.log': No such file or directory
+20120323232447:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323232755:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323232755:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323232755:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323232755:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323233254:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323233254:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323233256:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323233256:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323233307:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323233307:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323233308:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323233308:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323233308:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323233308:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323233309:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323233309:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323233309:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323233309:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323233309:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
+20120323234553:ec2-107-22-129-145.compute-1.amazonaws.com:davemckenna:ssh: date
+20120323234553:ec2-23-20-170-212.compute-1.amazonaws.com:davemckenna:ssh: date
+20120323234553:ec2-107-22-129-145.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120323234553:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 255
+20120323234553:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: Permission denied (publickey).
+20120323234553:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 255
+20120323235018:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323235018:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323235019:ec2-107-22-129-145.compute-1.amazonaws.com:stdout: Sat Mar 24 03:50:19 UTC 2012
+20120323235019:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323235019:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: Sat Mar 24 03:50:19 UTC 2012
+20120323235019:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235123:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323235123:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: date
+20120323235124:ec2-107-22-129-145.compute-1.amazonaws.com:stdout: Sat Mar 24 03:51:24 UTC 2012
+20120323235124:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323235124:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch fart.com
+20120323235124:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: Sat Mar 24 03:51:23 UTC 2012
+20120323235124:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235124:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch fart.com
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: ls
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: ls
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: fart.com
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: fartface
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: fart.com
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:stdout: fartface
+20120323235125:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235512:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:ssh: touch 1
+20120323235512:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 1
+20120323235513:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323235513:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 2
+20120323235513:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235513:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 2
+20120323235514:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235514:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 3
+20120323235514:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235514:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 3
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 4
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 4
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235515:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 5
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 5
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 6
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235516:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 6
+20120323235517:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235517:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 7
+20120323235517:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235517:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: touch 7
+20120323235518:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235518:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235931:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-23-20-170-212.compute-1.amazonaws.com:~
+20120323235931:ec2-107-22-129-145.compute-1.amazonaws.com:ubuntu:scp: /Users/davemckenna/npm-debug.log ubuntu@ec2-107-22-129-145.compute-1.amazonaws.com:~
+20120323235932:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235932:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323235932:ec2-107-22-129-145.compute-1.amazonaws.com:exit: 0
+20120323235932:ec2-23-20-170-212.compute-1.amazonaws.com:ubuntu:ssh: sudo mv npm-debug.log fartface
+20120323235933:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 0
+20120323235933:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: mv: 
+20120323235933:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: cannot stat `npm-debug.log'
+20120323235933:ec2-23-20-170-212.compute-1.amazonaws.com:stderr: : No such file or directory
+20120323235933:ec2-23-20-170-212.compute-1.amazonaws.com:exit: 1
