@@ -1,5 +1,5 @@
-exports.awsAccessKeyId     = 'AKIAI2B5EVGRGBMWZYVA';
-exports.awsSecretAccessKey = '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';
+exports.awsAccessKeyId     = '';
+exports.awsSecretAccessKey = '';
 
 
 //Defining the args to ssh command
